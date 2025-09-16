@@ -25,6 +25,10 @@ class AutonomousController(Node):
         self.min_lidar_dist = float('inf')
         self.ultrasonic_dist = float('inf')
         self.autonomy_enabled = False     # NEW flag
+    
+
+    def nothing():
+        print(0)
 
     # === Callbacks ===
     def enable_callback(self, msg: Bool):
